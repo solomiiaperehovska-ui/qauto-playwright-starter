@@ -41,7 +41,7 @@ export default defineConfig({
   testDir: './tests',
   timeout: 30_000,
   retries: 1,
-  reporter: [['html', { open: 'never' }], ['list']],
+  reporter: [['html', { open: 'never' }], ['list'], ['./scripts/add-car-audi-tt-evidence-reporter.cjs']],
   use: {
     baseURL: process.env.QAUTO_BASE_URL ?? 'https://qauto.forstudy.space',
     httpCredentials,
